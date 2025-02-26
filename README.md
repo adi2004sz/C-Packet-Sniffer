@@ -23,8 +23,8 @@ sudo apt install libpcap-dev
 sudo dnf install libpcap-devel
 ```
 
-##Setup & Usage
-###Find Your Network Interface
+## Setup & Usage
+### Find Your Network Interface
 Before running the program, check your network interface name:
 
 ```bash
@@ -38,11 +38,11 @@ handle = pcap_open_live("your-interface", BUFSIZ, 1, 1000, errbuf);
 ```
 
 
-###Compile the program
+### Compile the program
 ```bash
 gcc sniffer.c -o sniffer -lpcap
 ```
-###Run the packet sniffer
+### Run the packet sniffer
 ```bash
 sudo ./sniffer
 ```
