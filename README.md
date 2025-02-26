@@ -47,4 +47,4 @@ gcc sniffer.c -o sniffer -lpcap
 sudo ./sniffer
 ```
 ## Future Improvements
--Add support for writing captured packets to a .pcap file
+- Add support for writing captured packets to a .pcap file
