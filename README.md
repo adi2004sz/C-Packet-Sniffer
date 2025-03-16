@@ -1,17 +1,19 @@
 # C Packet Sniffer
 
 ## Overview
-This is a simple network packet sniffer written in C using `libpcap`. It captures and analyzes Ethernet, IP, TCP, and UDP packets in real-time, displaying relevant information such as MAC addresses, IP addresses, and port numbers.
+This is a simple network packet sniffer written in C using `libpcap`. It captures and analyzes Ethernet, IP, TCP, and UDP packets in real-time, displaying relevant information such as MAC addresses, IP addresses, and port numbers. The program also supports writing captured packets to a `.pcap` file for later analysis using tools like Wireshark or `tcpdump`.
 
 ## Features
 - Captures packets from a specified network interface
 - Extracts and displays Ethernet, IP, TCP, and UDP headers
 - Filters packets based on protocol
 - Supports real-time packet capture and analysis
+- Supports writing captured packets to a `.pcap` file
 
 ## Prerequisites
 - A Linux system with a working network interface (Tested on Debian in a Virtual Machine)
 - `libpcap` installed
+-  Wireshark and 'tcpdump' for packet analysis
 
 ### Install `libpcap`
 #### Debian/Ubuntu:
@@ -40,7 +42,7 @@ handle = pcap_open_live("your-interface", BUFSIZ, 1, 1000, errbuf);
 
 ### Compile the program
 ```bash
-gcc sniffer.c -o sniffer -lpcap
+make
 ```
 ### Run the packet sniffer
 ```bash
