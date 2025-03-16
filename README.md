@@ -48,5 +48,4 @@ make
 ```bash
 sudo ./sniffer
 ```
-## Future Improvements
-- Add support for writing captured packets to a .pcap file
+
