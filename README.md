@@ -13,7 +13,7 @@ This is a simple network packet sniffer written in C using `libpcap`. It capture
 ## Prerequisites
 - A Linux system with a working network interface (Tested on Debian in a Virtual Machine)
 - `libpcap` installed
--  Wireshark and 'tcpdump' for packet analysis
+-  Wireshark and `tcpdump` for packet analysis
 
 ### Install `libpcap`
 #### Debian/Ubuntu:
